@@ -11,10 +11,10 @@
           <i class="el-icon-menu"></i>
           <span slot="title">首页</span>
         </el-menu-item>
-        <el-menu-item index="2">
+        <router-link :to="{name:'Village'}"><el-menu-item index="2">
           <i class="el-icon-menu"></i>
           <span slot="title">小区管理</span>
-        </el-menu-item>
+        </el-menu-item></router-link>
         <el-menu-item index="3">
           <i class="el-icon-document"></i>
           <span slot="title">房屋管理</span>

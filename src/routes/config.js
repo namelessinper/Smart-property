@@ -7,7 +7,13 @@ export default {
       path: "/",
       name: "Home",
       component: () => import("@/views/HomeView"),
-      children: [],
+      children: [
+        {
+          path: "village",
+          name: "Village",
+          component: () => import("@/components/VillageManage/VillageManage"),
+        }
+      ],
     },
   ],
 };

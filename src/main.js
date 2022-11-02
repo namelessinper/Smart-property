@@ -6,6 +6,9 @@ import VueRouter from "vue-router";
 
 import config from "@/routes/config";
 
+// store仓库
+import store from './store'
+
 Vue.use(ElementUI);
 Vue.use(VueRouter);
 
@@ -16,4 +19,5 @@ const router = new VueRouter(config);
 new Vue({
   render: (h) => h(App),
   router,
+  store
 }).$mount("#app");
